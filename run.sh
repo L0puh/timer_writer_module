@@ -1,3 +1,8 @@
+#!/bin/bash
+
 make 
-sudo insmod hello_world.ko
-sudo rmmod hello_world.ko
+sudo insmod timer_writer.ko
+sudo rmmod timer_writer.ko
+
+# show logs 
+sudo dmesg | tail
